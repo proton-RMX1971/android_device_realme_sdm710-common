@@ -298,6 +298,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
+# Kernel
+LOCAL_KERNEL := device/realme/sdm710-common/prebuilt/Image.gz-dtb
+PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
+
+PRODUCT_VENDOR_KERNEL_HEADERS := $(LOCAL_PATH)/kernel-headers
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.realme_sdm710 \
