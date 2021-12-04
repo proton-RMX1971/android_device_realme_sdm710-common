@@ -231,8 +231,8 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
 
 # Doze
-PRODUCT_PACKAGES += \
-    KharaMeParts
+# PRODUCT_PACKAGES += \
+#     KharaMeParts
 
 # Fingerprint
 PRODUCT_PACKAGES += \
