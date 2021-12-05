@@ -424,7 +424,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/wfd-commonsys \
     hardware/qcom/display \
     hardware/qcom/media \
-    vendor/qcom/opensource/audio-hal/primary-hal
+    vendor/qcom/opensource/audio-hal/primary-hal \
+    vendor/qcom/opensource/data-ipa-cfg-mgr
 
 # Telephony
 PRODUCT_PACKAGES += \
