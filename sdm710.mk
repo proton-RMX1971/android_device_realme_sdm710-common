@@ -429,7 +429,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     vendor/qcom/opensource/commonsys-intf/display \
-    vendor/qcom/opensource/wfd-commonsys \
+    vendor/qcom/opensource/commonsys-intf/wfd \
     hardware/qcom/display \
     hardware/qcom/media \
     vendor/qcom/opensource/audio-hal/primary-hal \
