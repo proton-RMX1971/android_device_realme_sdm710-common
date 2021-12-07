@@ -1,2 +1,4 @@
 set_prop(wcnss_service, oppo_wlan_prop);
 allow wcnss_service mnt_vendor_file:file { read open };
+allow wcnss_service mnt_vendor_file:file getattr;
+allow wcnss_service vfat:dir search;
