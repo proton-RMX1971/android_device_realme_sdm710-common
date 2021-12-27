@@ -18,6 +18,9 @@ $(call inherit-product, vendor/realme/sdm710-common/sdm710-common-vendor.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# HIDL 
+$(call inherit-product, $(LOCAL_PATH)/sdm710-hidl.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage \
