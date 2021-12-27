@@ -15,6 +15,9 @@ OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/realme/sdm710-common/sdm710-common-vendor.mk)
 
+# HIDL 
+$(call inherit-product, $(LOCAL_PATH)/sdm710-hidl.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage \
