@@ -52,12 +52,14 @@ struct tfa98xx {
     struct snd_soc_codec *codec;
     struct workqueue_struct *tfa98xx_wq;
     struct work_struct init_work;
-    #ifndef CONFIG_PRODUCT_REALME_SDM710
+    #ifndef CONFIG_MACH_REALME
+    /*John.Xu@PSW.MM.AudioDriver.SmartPA, 2015/12/24, Remove for no need too much log*/
     struct delayed_work delay_work;
-    #endif /* CONFIG_PRODUCT_REALME_SDM710 */
-    #ifdef CONFIG_PRODUCT_REALME_SDM710
+    #endif /* CONFIG_MACH_REALME */
+    #ifdef CONFIG_MACH_REALME
+    /*John.Xu@PSW.MM.AudioDriver.SmartPA, 2015/12/24, Add for avoiding pop when start*/
     struct delayed_work vol_work;
-    #endif /* CONFIG_PRODUCT_REALME_SDM710 */
+    #endif /* CONFIG_MACH_REALME */
     struct mutex dsp_init_lock;
     int dsp_init;
     int sysclk;
