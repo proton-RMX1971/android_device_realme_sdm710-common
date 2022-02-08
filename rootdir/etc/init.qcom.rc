@@ -1303,9 +1303,10 @@ on property:persist.sys.device_provisioned=1
     setprop dalvik.vm.dex2oat-threads 6
 
 service vendor.sensors-hal-1-0 /vendor/bin/hw/android.hardware.sensors@1.0-service
+    override
     interface android.hardware.sensors@1.0::ISensors default
-    class hal
+    class late_start
     user system
-    group system wakelock uhid context_hub input
+    group system wakelock uhid context_hub input misc
     capabilities BLOCK_SUSPEND
     rlimit rtprio 10 10
