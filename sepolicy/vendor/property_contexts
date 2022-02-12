@@ -74,3 +74,4 @@ persist.usb.hvdcp.detect                  u:object_r:oppo_debug_prop:s0
 ro.oppo.nw.singlecard                  u:object_r:oppo_debug_prop:s0
 ro.logdumpd.enabled                  u:object_r:oppo_debug_prop:s0
 init.svc.hypnusd		u:object_r:oppo_debug_prop:s0
+ro.hwversion			u:object_r:ro_hwversion_prop:s0
