@@ -16,3 +16,6 @@ vendor.oppo.hardware.commondcs::ICommonDcsHalService            u:object_r:hal_o
 vendor.oplus.hardware.radio::IOplusRadio              u:object_r:hal_telephony_hwservice:s0
 vendor.oplus.hardware.appradio::IOplusAppRadio        u:object_r:hal_telephony_hwservice:s0
 vendor.oplus.hardware.ims::IOplusImsRadio             u:object_r:hal_telephony_hwservice:s0
+
+# cnd
+vendor.qti.hardware.slmadapter::ISlmAdapter                                   u:object_r:vendor_hal_slmadapter_hwservice:s0
